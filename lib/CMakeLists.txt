@@ -37,7 +37,7 @@ if(NOT uhd_link_test_sources)
 endif(NOT uhd_link_test_sources)
 
 add_library(gnuradio-uhd_link_test SHARED ${uhd_link_test_sources})
-target_link_libraries(gnuradio-uhd_link_test ${Boost_LIBRARIES} ${GNURADIO_ALL_LIBRARIES})
+target_link_libraries(gnuradio-uhd_link_test ${Boost_LIBRARIES} ${GNURADIO_ALL_LIBRARIES} uhd)
 set_target_properties(gnuradio-uhd_link_test PROPERTIES DEFINE_SYMBOL "gnuradio_uhd_link_test_EXPORTS")
 
 if(APPLE)
@@ -70,7 +70,6 @@ add_executable(test-uhd_link_test ${test_uhd_link_test_sources})
 target_link_libraries(
   test-uhd_link_test
   ${GNURADIO_RUNTIME_LIBRARIES}
-  ${GNURADIO_ALL_LIBRARIES}
   ${Boost_LIBRARIES}
   ${CPPUNIT_LIBRARIES}
   gnuradio-uhd_link_test
