@@ -1,6 +1,6 @@
 # uhd_link_test
 
-This project illusrates a linking problem of GNU Radio with UHD. Tested with GNU Radio 3.7.12 (351dfb8ec4b07dddbd921f994c2bfd89cc35eadf) and 3.7.11.1 (486cd827024c19a5d17adc710905974cf81f7948).
+This project illusrates how to link a GNU Radio OOT module with UHD. Tested with GNU Radio 3.7.12 (351dfb8ec4b07dddbd921f994c2bfd89cc35eadf).
 
 Assuming you have a working and active GR environment
 
@@ -12,9 +12,9 @@ Assuming you have a working and active GR environment
 1. `make`
 1. `make install`
 1. `cd ..`
-1. `python python//qa_uhd_usage.py`
+1. `python python/qa_uhd_usage.py`
 
-If the problem is reproduced, the process will crash and a similar exception will be shown:
+If the original problem is reproduced, the process will crash and a similar exception will be shown:
 
 ```
 Traceback (most recent call last):
