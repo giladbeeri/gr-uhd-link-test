@@ -27,6 +27,7 @@ include_directories(${Boost_INCLUDE_DIR})
 link_directories(${Boost_LIBRARY_DIRS})
 
 list(APPEND uhd_link_test_sources
+    uhd_usage_impl.cc
 )
 
 set(uhd_link_test_sources "${uhd_link_test_sources}" PARENT_SCOPE)
@@ -61,6 +62,7 @@ include_directories(${CPPUNIT_INCLUDE_DIRS})
 list(APPEND test_uhd_link_test_sources
     ${CMAKE_CURRENT_SOURCE_DIR}/test_uhd_link_test.cc
     ${CMAKE_CURRENT_SOURCE_DIR}/qa_uhd_link_test.cc
+    ${CMAKE_CURRENT_SOURCE_DIR}/qa_uhd_usage.cc
 )
 
 add_executable(test-uhd_link_test ${test_uhd_link_test_sources})

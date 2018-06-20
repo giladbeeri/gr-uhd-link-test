@@ -27,11 +27,13 @@
  */
 
 #include "qa_uhd_link_test.h"
+#include "qa_uhd_usage.h"
 
 CppUnit::TestSuite *
 qa_uhd_link_test::suite()
 {
   CppUnit::TestSuite *s = new CppUnit::TestSuite("uhd_link_test");
+  s->addTest(gr::uhd_link_test::qa_uhd_usage::suite());
 
   return s;
 }

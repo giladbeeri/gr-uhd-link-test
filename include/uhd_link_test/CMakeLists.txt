@@ -23,5 +23,5 @@
 ########################################################################
 install(FILES
     api.h
-    DESTINATION include/uhd_link_test
+    uhd_usage.h DESTINATION include/uhd_link_test
 )

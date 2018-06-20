@@ -19,5 +19,5 @@
 # Boston, MA 02110-1301, USA.
 
 install(FILES
-    DESTINATION share/gnuradio/grc/blocks
+    uhd_link_test_uhd_usage.xml DESTINATION share/gnuradio/grc/blocks
 )
