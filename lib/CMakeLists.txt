@@ -70,6 +70,7 @@ add_executable(test-uhd_link_test ${test_uhd_link_test_sources})
 target_link_libraries(
   test-uhd_link_test
   ${GNURADIO_RUNTIME_LIBRARIES}
+  ${GNURADIO_ALL_LIBRARIES}
   ${Boost_LIBRARIES}
   ${CPPUNIT_LIBRARIES}
   gnuradio-uhd_link_test
