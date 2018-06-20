@@ -22,8 +22,9 @@
 #include "config.h"
 #endif
 
-#include <gnuradio/io_signature.h>
 #include "uhd_usage_impl.h"
+
+#include <gnuradio/io_signature.h>
 
 namespace gr {
   namespace uhd_link_test {
